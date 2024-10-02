@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileInputValidator Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../dist/FileInputValidator.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>File Input Validator Example</h1>
+        <form>
+			<div class="col-sm-12 col-md-6 mb-3">
+                <label for="upload_file" class="form-label">Upload a File</label>
+                <input type="file" class="form-control my-file-input" id="upload_file" name="upload_file" required>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+			// Initialize with default settings
+			new FileInputValidator('.my-file-input');
+		});
+    </script>
+</body>
+</html>
